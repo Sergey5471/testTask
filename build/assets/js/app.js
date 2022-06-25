@@ -1,5 +1,7 @@
 const popupBtn = document.getElementById('popup')
 
+// const header = document.getElementById('header')
+
 const body = document.querySelector('body')
 
 const popupWindow = document.createElement('div')
@@ -106,10 +108,9 @@ formBtn.addEventListener('click', function (event) {
 //// adaptiv
 
 const screenWidth = document.documentElement.width
-console.log(screenWidth);
-
 
 const header = document.getElementById('header')
+const headerBurger = document.getElementById('headerBurger')
 const topboxItem = document.getElementById('topbox-item')
 const topboxPriselist = document.getElementById('topbox-pricelist')
 const topboxLogo = document.getElementById('topbox-logo')
@@ -124,7 +125,7 @@ burgerBtnOpen.innerHTML = '&#x2630;'
 const burgerBtnClose = document.createElement('div')
 burgerBtnClose.classList.add('burger')
 burgerBtnClose.innerHTML = '&#x2716;'
-const headerBurger = document.getElementById('headerBurger')
+
 const burgerBox = document.createElement('div')
 
 burgerBtnOpen.addEventListener('click', function(event) {
@@ -148,8 +149,9 @@ function burgerDraw(params) {
 	burgerBox.append(topboxSocial)
 }
 
+
 function changeScreenWidth(width) {
-	if (width <= 920) {
+	if (width <= 992) {
 		topboxItem.remove();
 		topboxPriselist.remove();
 		topboxSocial.remove();
@@ -164,14 +166,18 @@ function changeScreenWidth(width) {
 		topboxLogo.before(topboxItem)
 		topboxLogo.before(topboxPriselist)
 		topboxLogo.after(topboxSocial)
-		burgerBtnOpen	.remove()
+		burgerBtnOpen.remove()
 	}
 }
 
+window.addEventListener('load', function (params) {
+	let width = document.documentElement.clientWidth
+	changeScreenWidth(width)
+})
 
 window.addEventListener('resize', function () {
 	let width = document.documentElement.clientWidth
 	changeScreenWidth(width)
-	console.log(document.documentElement.clientWidth);
+	
 	
 })
