@@ -23,3 +23,27 @@ html {
 }
 
 
+@media (max-width: 920.75px) {
+	html {
+		font-size: 10px;
+		font-weight: 400;
+		font-size: normal;
+		line-height: 1.4;
+		color: #000;
+		cursor: default;
+	}
+	
+	.container {
+		max-width: 920px;
+		padding: 0 15px;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 425.75px) {
+	.container {
+		max-width: 425px;
+		padding: 0 15px;
+		margin: 0 auto;
+	}
+}

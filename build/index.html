@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="./assets/css/app.css">
   </head>
   <body>
-    <header class="header container">
-      <div class="header__nav"> 
+    <header class="header container" id="header">
+      <div class="header__nav" id="headerBurger"> 
         <ul class="header__nav__list">
-          <li class="header__nav__link"><a href=""><svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <li class="header__nav__link" id="header-logo"><a href=""><svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M22.6129 9.77275L12.2944 0.311896C11.8406 -0.103965 11.1578 -0.103965 10.7041 0.311896L0.385564 9.77275C0.0216964 10.1073 -0.0951005 10.618 0.0800948 11.0791C0.25529 11.5402 0.691032 11.8385 1.18068 11.8385H2.82931V21.3174C2.82931 21.6926 3.13029 22 3.50763 22H9.1633C9.53615 22 9.84162 21.6971 9.84162 21.3174V15.5632H13.1658V21.3174C13.1658 21.6926 13.4668 22 13.8442 22H19.4953C19.8682 22 20.1736 21.6971 20.1736 21.3174V11.8385H21.8223C22.3119 11.8385 22.7432 11.5402 22.9229 11.0791C23.0936 10.618 22.9768 10.1073 22.6129 9.77275Z" fill="#F38120"/>
 </svg></a></li>
           <li class="header__nav__link"><a href="">каталог</a></li>
@@ -30,11 +30,11 @@
     <section class="intro"> 
       <div class="container"> 
         <div class="intro__topbox"> 
-          <div class="intro__topbox__item"> 
+          <div class="intro__topbox__item" id="topbox-item"> 
             <p class="intro__topbox-text"><b>Кровельные и фасадные материалы</b> в Тюмени и области.</p>
             <p class="intro__topbox-text"> Профессиональный монтаж с 2010 года.</p>
           </div>
-          <div class="intro__topbox__pricelist"><a class="intro__topbox__pricelist" href="">
+          <div class="intro__topbox__pricelist" id="topbox-pricelist"><a class="intro__topbox__pricelist" href="">
                <svg width="94" height="94" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d_1_1130)">
 <rect x="25" y="25" width="43.8462" height="43.8462" rx="21.9231" fill="white"/>
@@ -53,8 +53,8 @@
 </filter>
 </defs>
 </svg></a><a class="intro__topbox__pricelist-link" href="">Скачать прайс-каталог</a></div>
-          <div class="intro__topbox__item"> <img class="intro__topbox-img" src="./assets/imgs/logo.png" alt="#"></div>
-          <div class="intro__topbox__social">
+          <div class="intro__topbox__logo" id="topbox-logo"> <img class="intro__topbox-img" src="./assets/imgs/logo.png" alt="#"></div>
+          <div class="intro__topbox__social" id="topbox-social">
             <p>Отвечаем <b>онлайн</b></p><a href="https://www.viber.com/ru/" target="blank"><svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect y="0.577148" width="43.8462" height="43.8462" rx="21.9231" fill="#976FCC"/>
 <path d="M21.9233 12.8545C16.598 12.8545 12.2771 17.1753 12.2771 22.5007C12.2771 24.633 12.9673 26.5971 14.1345 28.1963L12.9056 31.8326L16.7383 30.6373C18.2365 31.5913 20.0154 32.1468 21.9233 32.1468C27.2486 32.1468 31.5695 27.826 31.5695 22.5007C31.5695 17.1753 27.2486 12.8545 21.9233 12.8545ZM26.3396 27.6745C24.5888 28.3759 22.5013 27.6969 20.2174 25.963C17.9335 24.229 16.4296 21.788 16.3286 19.9755C16.2276 18.163 17.7035 17.2483 18.5059 17.2539C19.3083 17.2595 20.1893 19.824 20.2006 20.2168C20.2118 20.6152 19.2186 21.3222 19.1793 21.6589C19.14 21.9956 20.5316 23.6566 21.1209 24.1056C21.7045 24.5489 22.9109 25.4018 23.5338 25.3232C24.1511 25.2391 24.5607 23.9989 24.9535 23.9204C25.3463 23.8418 27.4899 24.908 27.7031 25.183C27.9164 25.4635 27.8939 27.0572 26.3396 27.6745Z" fill="white"/>
@@ -66,7 +66,7 @@
 <path d="M20.0352 24.7309L19.744 28.6472C20.1585 28.6472 20.3401 28.4762 20.5559 28.269L22.5015 26.4835L26.5333 29.318C27.2732 29.7125 27.7939 29.5054 27.9926 28.6636L30.6405 16.757C30.8769 15.7113 30.2466 15.3003 29.5272 15.5601L13.9686 21.2783C12.9067 21.6729 12.9239 22.2417 13.7871 22.4982L17.7641 23.6853L27.0026 18.1348C27.4377 17.8585 27.8316 18.0098 27.5062 18.2893L20.0352 24.7309Z" fill="white"/>
 </svg></a>
           </div>
-          <div class="intro__topbox__contact">
+          <div class="intro__topbox__contact" id="topbox__contact">
             <p> <b>Пн-Пт </b>9:00 - 18:00, <b>Сб </b>10:00 - 18:00</p><a href="tel:+">8 (800) 222-54-60</a>
             <div class="intro__topbox__popup" id="popup">Позвоните мне</div>
           </div>
@@ -92,11 +92,11 @@
           <div class="intro__main"> 
             <h1 class="intro__main__title">Продажа <b>кровельных материалов </b>в Тюмени и Тюменской области </h1><span>и монтаж под ключ
               <div></div></span>
-            <div class="intro__main__buttons"> 
+            <div class="intro__main__buttons" id="intro-main-buttons">
               <div class="intro__main__button-green">Рассчитать стоимость материалов и монтажа</div>
               <div class="intro__main__button-orange">записаться на просмотр объектов</div>
             </div>
-            <p class="intro__main__text"> <b>Ответьте на несколько вопросов и получите </b>сметную стоимость и 3 подарка за экономию нашего времени </p>
+            <p class="intro__main__text" id="intro-main-text"> <b>Ответьте на несколько вопросов и получите </b>сметную стоимость и 3 подарка за экономию нашего времени </p>
           </div>
         </div>
       </div>

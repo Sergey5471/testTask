@@ -37,6 +37,33 @@
 		height: 1.979vw;
 		width: 1.979vw;
 	}
+}
 
+@media (max-width: 920.75px) {
+	.header {
+		padding: 2rem 0 2rem 0;
+		border-bottom: none;
+		
+		
+		
+		&__nav__list {
+			display: grid;
+			grid-template-columns: auto;
+			grid-template-rows: repeat(8, auto);
+			align-items: center;
+			gap: 2rem;
+			justify-items: center;
+		}
+
+		&__nav__link a {
+			font-size: 1.2rem;
+			letter-spacing: 0.05rem;
 	
+		}
+	
+		&__nav__link svg{
+			height: 2.2rem;
+			width: 2.2rem;
+		}
+	}
 }

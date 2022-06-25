@@ -135,7 +135,7 @@
 	}
 
 	&__side {
-		background: url(../imgs/side.png) no-repeat center;
+		background: url(../imgs/side.png);
 		background-size: cover;
 		padding: 3.281vw 1.771vw 2.161vw;
 		width: 11.719vw;
@@ -321,3 +321,528 @@
 		}
 	}
 }
+
+.burger {
+	font-size: 2.2rem;
+	font-weight: 700;
+	position: relative;
+
+
+	&__box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 1.5rem 0;
+		background: #EDF2F5;
+		position: absolute;
+		top: 8.6rem;
+		left: 0;
+		right: 0;
+		border-radius: 2.5rem;
+	
+	}
+}
+
+
+@media (max-width: 920.75px) {
+	.intro {
+		padding-top: 0.5rem;
+		background-size:cover;
+		
+	
+		&__topbox {
+			display: grid;
+			grid-template-columns: repeat(3,auto);
+			justify-content: space-between;
+			align-items: center;
+			gap: 0;
+			margin-bottom: 2rem;
+			
+			&__item {
+				margin-top: 3.2rem;
+			}
+			&-text {
+				font-size: 1rem;
+				width: 20rem;
+				text-indent: 0;
+				padding-bottom: 0;
+						
+			}
+			
+			&__pricelist {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+	
+			&__pricelist svg{
+				width: 4.3rem;
+				height:  4.3rem;
+			}
+	
+			&__pricelist-link {
+				font-size: 1rem;
+				border-bottom: 0.2rem dotted #12c868;
+	
+			}
+				
+			&__logo {
+				display: inline-block;
+			}
+	
+			&-img {
+				max-width: 150px;
+				width: 100%;
+						
+			}
+			
+			&__social p {
+				font-size: 1rem;
+				padding-bottom: 1rem;
+				
+				
+			}
+	
+			&__social p::before {
+				content: "";
+				width: 0.4rem;
+				height: 0.4rem;
+				border: 0.1rem solid #12c868;
+				top: 0.4rem;
+				left: 2.9rem;
+			}
+
+			
+			&__social a {
+				display: inline-block;
+				width: 4.3rem;
+				height: 4.3rem;
+				margin: 0 0.7rem;
+			}
+			&__social a:hover rect{
+				fill: #1c1c1c;
+			}
+			&__social svg {
+				width: 4.3rem;
+				height: 4.3rem;
+				
+			}
+
+			&__contact p {
+				font-size: 1.2rem;
+				padding-bottom:0.5rem;
+				cursor: default;
+			}
+	
+			&__contact b{
+				font-weight: 700;
+			}
+	
+			&__contact a {
+				display: block;
+				font-size: 2rem;
+				
+			}
+	
+			&__popup {
+				font-size: 1.2rem;
+				letter-spacing: 0.04em;
+				padding-top: 0.5rem;
+				border-bottom: 0.5rem dotted #12c868;
+			}
+		
+	
+		}
+	
+		&__wrapper {
+			display: flex;
+			gap: 6rem;
+			
+		}
+	
+		&__side {
+			background: url(../imgs/side.png);
+			background-size: 100%;
+			padding: 1.3rem 4.5rem 1rem 2.3rem;
+			max-width: 22.5rem;
+			width: 100%;
+			
+			&__item {
+				padding: 1.4rem 0;
+				
+				}
+		
+			&__item p {
+				font-size: 1.2rem;
+	
+			}
+		}
+	
+		&__main {
+			&__title {
+				font-size: 2.2rem;
+				width: 26rem;
+				margin-bottom: 0.5rem;
+			}
+
+
+			& span {	
+				font-size: 1.6rem;
+				padding-left: 4.7rem;
+				margin-bottom: 0;
+				
+			}
+			& span::before {
+				content: "";
+				width: 0.5rem;
+				height: 0.5rem;
+				border-radius: 50%;
+				border: 0.1rem solid #12C868;
+				position: absolute;
+				left: 0;
+				top: 0.7rem;
+			}
+			& span::after {
+				content: "";
+				width: 0.5rem;
+				height: 0.5rem;
+				border-radius: 50%;
+				border: 0.1rem solid rgba(18, 200, 104, 0.75);
+				position: absolute;
+				left: 1rem;
+				top: 0.7rem;
+			}
+			& span div::after {
+				content: "";
+				width: 0.5rem;
+				height: 0.5rem;
+				border-radius: 50%;
+				border: 0.1rem solid rgba(18, 200, 104, 0.5);
+				position: absolute;
+				left: 2rem;
+				top: 0.7rem;
+			}
+			& span div::before {
+				content: "";
+				width: 0.5rem;
+				height: 0.5rem;
+				border-radius: 50%;
+				border: 0.1rem solid rgba(18, 200, 104, 0.25);
+				position: absolute;
+				left: 3rem;
+				top: 0.7rem;
+			}
+			&__buttons {
+				margin-top: 1.2rem;
+				margin-bottom: 1.2rem;
+			}
+			&__button-green {
+				padding: 1.4rem 4.5rem 1.4rem 4.5rem;
+				font-size: 1rem;
+				width: 27.6rem;
+				margin-bottom: 1.2rem;
+
+			}
+			&__button-green::after {
+				width: 2rem;
+				height: 2rem;
+				right: 2.5rem;
+				top: 2rem;
+			}
+			&__button-orange {
+				padding: 1.4rem 4.5rem 1.4rem 4.5rem;
+				font-size: 1rem;
+				width: 27.6rem;
+			}
+			&__button-orange::after {
+				width: 2rem;
+				height: 2rem;
+				right: 2.5rem;
+				top: 2rem;
+			}
+
+	
+			&__text {
+				font-size: 1.2rem;
+				width: 25rem;
+				padding-left:2rem;
+				margin-top: 3.3rem;
+
+			}
+	
+			&__text::before {
+				content: "";
+				width: 1.4rem;
+				height: 1.3rem;
+				background: url(../imgs/pointer.svg) no-repeat center;
+				background-size: cover;
+				position: absolute;
+				left: 0;
+			}
+		}
+	}
+
+}
+
+@media (max-width: 425.75px) {
+	.intro {
+		padding-top: 0.5rem;
+		background-size:cover;
+		background-position: right;
+		
+	
+		&__topbox {
+			display: grid;
+			grid-template-columns: repeat(3,auto);
+			justify-content: space-between;
+			align-items: center;
+			gap: 0;
+			margin-bottom: 2rem;
+			
+			
+
+			&-text {
+				font-size: 1rem;
+				width: 20rem;
+				text-indent: 0;
+				padding-bottom: 0;
+						
+			}
+			
+			&__pricelist {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+	
+			&__pricelist svg{
+				width: 4.3rem;
+				height:  4.3rem;
+			}
+	
+			&__pricelist-link {
+				font-size: 1rem;
+				border-bottom: 0.2rem dotted #12c868;
+	
+			}
+				
+			&__logo {
+				display: inline-block;
+			}
+	
+			&-img {
+				max-width: 7.5rem;
+				width: 100%;
+						
+			}
+			
+			&__social p {
+				font-size: 1rem;
+				padding-bottom: 1rem;
+				
+				
+			}
+	
+			&__social p::before {
+				content: "";
+				width: 0.4rem;
+				height: 0.4rem;
+				border: 0.1rem solid #12c868;
+				top: 0.4rem;
+				left: 2.9rem;
+			}
+
+			
+			&__social a {
+				display: inline-block;
+				width: 4.3rem;
+				height: 4.3rem;
+				margin: 0 0.7rem;
+			}
+			&__social a:hover rect{
+				fill: #1c1c1c;
+			}
+			&__social svg {
+				width: 4.3rem;
+				height: 4.3rem;
+				
+			}
+
+			&__contact p {
+				font-size: .7rem;
+				padding-bottom:0.4rem;
+				cursor: default;
+			}
+	
+			&__contact b{
+				font-weight: 700;
+			}
+	
+			&__contact a {
+				display: block;
+				font-size: 1.4rem;
+				
+			}
+	
+			&__popup {
+				font-size: 1.2rem;
+				letter-spacing: 0.04em;
+				padding-top: 0.4rem;
+				border-bottom: 0.2rem dotted #12c868;
+			}
+		
+	
+		}
+	
+		&__wrapper {
+			display: flex;
+			flex-direction: column-reverse;
+			align-items: center;
+			gap: 6.9rem;
+		}
+	
+		&__side {
+			background: url(../imgs/side.png);
+			background-size: 100%;
+			padding: 1.3rem 4.5rem 1rem 2.3rem;
+			max-width: 22.5rem;
+			width: 100%;
+			
+			&__item {
+				padding: 1.4rem 0;
+				
+				}
+		
+			&__item p {
+				font-size: 1.2rem;
+	
+			}
+		}
+	
+		&__main {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			&__title {
+				font-size: 1.8rem;
+				width: 26rem;
+				margin-bottom: 0.5rem;
+			}
+
+
+			& span {	
+				font-size: 1.3rem;
+				padding-left: 4.7rem;
+				margin-bottom: 0;
+				
+			}
+			& span::before {
+				content: "";
+				width: 0.5rem;
+				height: 0.5rem;
+				border-radius: 50%;
+				border: 0.1rem solid #12C868;
+				position: absolute;
+				left: 0;
+				top: 0.7rem;
+			}
+			& span::after {
+				content: "";
+				width: 0.5rem;
+				height: 0.5rem;
+				border-radius: 50%;
+				border: 0.1rem solid rgba(18, 200, 104, 0.75);
+				position: absolute;
+				left: 1rem;
+				top: 0.7rem;
+			}
+			& span div::after {
+				content: "";
+				width: 0.5rem;
+				height: 0.5rem;
+				border-radius: 50%;
+				border: 0.1rem solid rgba(18, 200, 104, 0.5);
+				position: absolute;
+				left: 2rem;
+				top: 0.7rem;
+			}
+			& span div::before {
+				content: "";
+				width: 0.5rem;
+				height: 0.5rem;
+				border-radius: 50%;
+				border: 0.1rem solid rgba(18, 200, 104, 0.25);
+				position: absolute;
+				left: 3rem;
+				top: 0.7rem;
+			}
+			&__buttons {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin-top: 1.2rem;
+				margin-bottom: 1.2rem;
+			}
+			&__button-green {
+				padding: 1.4rem 4.5rem 1.4rem 4.5rem;
+				font-size: 1rem;
+				width: 27.6rem;
+				margin-bottom: 1.2rem;
+
+			}
+			&__button-green::after {
+				width: 2rem;
+				height: 2rem;
+				right: 2.5rem;
+				top: 2rem;
+			}
+			&__button-orange {
+				padding: 1.4rem 4.5rem 1.4rem 4.5rem;
+				font-size: 1rem;
+				width: 27.6rem;
+			}
+			&__button-orange::after {
+				width: 2rem;
+				height: 2rem;
+				right: 2.5rem;
+				top: 2rem;
+			}
+
+	
+			&__text {
+				font-size: 0.8rem;
+				width: 25rem;
+				padding-left: 0;
+				margin-top: 3.3rem;
+
+			}
+	
+			&__text::before {
+				top: -1.6rem;
+				left: 50%;
+
+			}
+		}
+	}
+
+	.burger {
+
+		font-size: 2.2rem;
+		font-weight: 700;
+		position: relative;
+	
+		&__box {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 1.5rem 0;
+			background: #EDF2F5;
+			position: absolute;
+			top: 6.6rem;
+			left: 0;
+			right: 0;
+		
+		}
+	}
+}
+

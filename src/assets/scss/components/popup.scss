@@ -159,3 +159,216 @@
 	}
 }
 
+@media (max-width: 920.75px) {
+	.popup {
+		background-color: rgb(255, 255, 255);
+		border-radius: 3.5rem;
+		padding: 5rem 3rem 3rem ;
+		width: 48rem;
+	
+		&__title {
+			font-size: 2.2rem;
+			margin-bottom: 1rem;	
+
+		}
+	
+		&__close {
+			top: -3.5rem;
+			right: -1rem;
+
+		}
+	
+		&__subtitle {
+			font-size: 1.6rem;
+			margin-bottom: 2rem;
+		}
+	
+		&__time {
+			font-size: 1.2rem;
+			margin-bottom: 2rem;
+		}
+	
+		&__form {
+
+			&__label {
+				font-size: 1.2rem;
+				margin-bottom: 1.2rem;
+			}
+	
+			&__input {
+				box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+				border-radius: 500px;
+				border: none;
+				font-size: 1.4rem;
+				padding: 1.2rem 4.3rem 1.2rem 2.3rem;
+				margin: 0 auto 2rem;
+			}
+	
+			&__btn {
+				font-size: 1.2rem;
+				padding: 1.6rem 6.9rem 1.6rem 4.5rem;
+				border: radius 500px;;
+				margin: 0 auto 1rem;
+
+			}
+	
+			&__btn::after {
+				width: 1.5rem;
+				height: 1.5rem;
+				right: 1.5rem;
+				top: 1.5rem;
+			}
+
+	
+			&__checkbox {
+				width: 1rem;
+				height: 1rem;
+				margin-right: 1rem;
+				left: 10rem;
+				top: -.5rem;
+
+			}
+			&__checkbox::before {
+				top: -0.1rem;
+				left: -0.1rem;
+				width: 1.1rem;
+				height: 1.1rem;
+				border-radius: 4px;
+				border: .1rem solid #adb5bd;
+				margin-right: 1rem;
+
+			}
+			&__checkbox:checked:before {
+				top: -0.1rem;
+				left: -0.1rem;
+				width: 1.1rem;
+				height: 1.1rem;
+				border-radius: 4px;
+				border: .1rem solid #adb5bd;
+				margin-right: 1rem;
+				
+
+			}
+	
+			&__labelcheckbox {
+				font-size: 1rem;
+				line-height: 1;
+				text-align: left;
+				padding-left: 0;
+				display: inline-block;
+				width: 24rem;
+				position: relative;
+				left: 10rem;
+				
+				
+				
+			}
+	
+		}
+	}
+}
+
+@media (max-width: 425.75px) {
+	.popup {
+		border-radius: 3.5rem;
+		padding: 2rem 1rem 1rem ;
+		width: 30rem;
+	
+		&__title {
+			font-size: 1.6rem;
+			margin-bottom: 1rem;	
+
+		}
+	
+		&__close {
+			top: -.5rem;
+			right: .5rem;
+
+		}
+	
+		&__subtitle {
+			font-size: 1.2rem;
+			margin-bottom: 2rem;
+		}
+	
+		&__time {
+			font-size: 1rem;
+			margin-bottom: 1rem;
+		}
+	
+		&__form {
+
+			&__label {
+				font-size: 1rem;
+				margin-bottom: 1rem;
+			}
+	
+			&__input {
+				box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+				border-radius: 500px;
+				border: none;
+				font-size: 1rem;
+				padding: 1.2rem 4.3rem 1.2rem 2.3rem;
+				margin: 0 auto 2rem;
+			}
+	
+			&__btn {
+				font-size: 1rem;
+				padding: 1.2rem 5rem 1.2rem 3rem;
+				border: radius 500px;
+				margin: 0 auto 1rem;
+
+			}
+	
+			&__btn::after {
+				width: 1.5rem;
+				height: 1.5rem;
+				right: 1.6rem;
+				top: 1.1rem;
+			}
+
+	
+			&__checkbox {
+				width: 1rem;
+				height: 1rem;
+				margin-right: 1rem;
+				left: 5rem;
+				top: -.5rem;
+
+			}
+			&__checkbox::before {
+				top: -0.1rem;
+				left: -0.1rem;
+				width: 1.1rem;
+				height: 1.1rem;
+				border-radius: 4px;
+				border: .1rem solid #adb5bd;
+				margin-right: 1rem;
+
+			}
+			&__checkbox:checked:before {
+				top: -0.1rem;
+				left: -0.1rem;
+				width: 1.1rem;
+				height: 1.1rem;
+				border-radius: 4px;
+				border: .1rem solid #adb5bd;
+				margin-right: 1rem;
+				
+
+			}
+	
+			&__labelcheckbox {
+				font-size: .8rem;
+				line-height: 1;
+				text-align: left;
+				padding-left: 0;
+				display: inline-block;
+				width: 15rem;
+				position: relative;
+				left: 5rem;
+				
+			}
+		}
+	}
+}

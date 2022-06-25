@@ -103,3 +103,75 @@ formBtn.addEventListener('click', function (event) {
 	
 })
 
+//// adaptiv
+
+const screenWidth = document.documentElement.width
+console.log(screenWidth);
+
+
+const header = document.getElementById('header')
+const topboxItem = document.getElementById('topbox-item')
+const topboxPriselist = document.getElementById('topbox-pricelist')
+const topboxLogo = document.getElementById('topbox-logo')
+const topboxSocial = document.getElementById('topbox-social')
+const topboxContact = document.getElementById('topbox__contact')
+const introText = document.getElementById('intro-main-text')
+const introButtons = document.getElementById('intro-main-buttons')
+const burgerBtnOpen = document.createElement('div')
+burgerBtnOpen.classList.add('burger')
+burgerBtnOpen.innerHTML = '&#x2630;'
+
+const burgerBtnClose = document.createElement('div')
+burgerBtnClose.classList.add('burger')
+burgerBtnClose.innerHTML = '&#x2716;'
+const headerBurger = document.getElementById('headerBurger')
+const burgerBox = document.createElement('div')
+
+burgerBtnOpen.addEventListener('click', function(event) {
+	burgerDraw()
+	burgerBtnOpen.remove()
+	topboxContact.after(burgerBtnClose)
+})
+
+burgerBtnClose.addEventListener('click', function () {
+	burgerBox.remove()
+	burgerBtnClose.remove()
+	topboxContact.after(burgerBtnOpen)
+})
+
+function burgerDraw(params) {
+	burgerBox.classList.add('burger__box')
+	body.after(burgerBox)
+	burgerBox.prepend(headerBurger)
+	burgerBox.append(topboxItem)
+	burgerBox.append(topboxPriselist)
+	burgerBox.append(topboxSocial)
+}
+
+function changeScreenWidth(width) {
+	if (width <= 920) {
+		topboxItem.remove();
+		topboxPriselist.remove();
+		topboxSocial.remove();
+		introText.remove()
+		introButtons.before(introText)
+		topboxContact.after(burgerBtnOpen)
+		headerBurger.remove()
+		header.remove()
+	} else {
+		body.prepend(header)
+		header.prepend(headerBurger)
+		topboxLogo.before(topboxItem)
+		topboxLogo.before(topboxPriselist)
+		topboxLogo.after(topboxSocial)
+		burgerBtnOpen	.remove()
+	}
+}
+
+
+window.addEventListener('resize', function () {
+	let width = document.documentElement.clientWidth
+	changeScreenWidth(width)
+	console.log(document.documentElement.clientWidth);
+	
+})
