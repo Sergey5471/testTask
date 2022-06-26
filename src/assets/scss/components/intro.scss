@@ -466,15 +466,84 @@
 		&__side {
 			background: url(../imgs/side.png);
 			background-size: 100%;
+			border-radius: 20px;
 			padding: 1.3rem 4.5rem 1rem 2.3rem;
 			max-width: 22.5rem;
 			width: 100%;
+			position: relative;
+
+			&__accord {
+				background: url(../imgs/accord.svg) no-repeat center;
+				background-size: cover;
+				width: 3.3rem;
+				height: 3.3rem;
+				border-radius: 50%;
+				position: absolute;
+				top: 2.9rem;
+				right: 1.4rem;
+				transition: all 0.5 linear 0s;
+				
+			}
+
+			&__accord__close {
+				background: url(../imgs/accordclose.svg) no-repeat center;
+
+			}
+		
+			&__accord::after {
+				content: "";
+				position: absolute;
+				z-index: 0;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 2.8rem;
+				height: 2.8rem;
+				border: 0.3rem solid #F38120;
+				border-radius: 50%;
+				transition: all 0.5s linear 0s;
+				animation: ring 1.5s infinite;
+			}
+
+			@keyframes ring {
+				0% {
+					width: 2.8rem;
+					height: 2.8rem;
+					opacity: 0;
+				}
+				25% {
+					width: 2.95rem;
+					height: 2.95rem;
+					opacity: 0.5;
+				}
+				50% {
+					width: 3.1rem;
+					height: 3.1rem;
+					opacity: 1;
+					border-color: #fd7c0b;
+				}
+				75% {
+					width: 2.95rem;
+					height: 2.95rem;
+					opacity: 0.5;
+				}
+				100% {
+					width: 2.8rem;
+					height: 2.8rem;
+					opacity: 0;
+				}
+			}
 			
+			&__item:not(:nth-child(2)) {
+				display: none;
+			}
+
 			&__item {
 				padding: 1.4rem 0;
-				
-				}
-		
+				display: block;
+			}
+
+			
 			&__item p {
 				font-size: 1.2rem;
 	
@@ -744,6 +813,7 @@
 			padding: 1.5rem 0;
 			background: #EDF2F5;
 			position: absolute;
+			z-index: 10;
 			top: 6.6rem;
 			left: 0;
 			right: 0;

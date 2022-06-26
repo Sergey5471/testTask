@@ -1,7 +1,5 @@
 const popupBtn = document.getElementById('popup')
 
-// const header = document.getElementById('header')
-
 const body = document.querySelector('body')
 
 const popupWindow = document.createElement('div')
@@ -121,12 +119,34 @@ const introButtons = document.getElementById('intro-main-buttons')
 const burgerBtnOpen = document.createElement('div')
 burgerBtnOpen.classList.add('burger')
 burgerBtnOpen.innerHTML = '&#x2630;'
-
 const burgerBtnClose = document.createElement('div')
 burgerBtnClose.classList.add('burger')
 burgerBtnClose.innerHTML = '&#x2716;'
-
 const burgerBox = document.createElement('div')
+
+const sideBlock = document.getElementById('side')
+const accordBtn = document.createElement('div')
+accordBtn.classList.add('intro__side__accord')
+
+const sideItems = document.querySelectorAll('.intro__side__item')
+
+accordBtn.addEventListener('click', function () {
+	console.log(accordBtn.classList.length);
+	if (accordBtn.classList.length < 2) {
+		
+		for (const elem of sideItems) {
+			elem.style.display = 'block'
+		}
+		accordBtn.classList.add('intro__side__accord__close')
+	} else {
+		for (let i = 1; i < sideItems.length; i++) {
+			sideItems[i].style.display = 'none'
+			
+		}
+
+		accordBtn.classList.remove('intro__side__accord__close')
+	}
+})
 
 burgerBtnOpen.addEventListener('click', function(event) {
 	burgerDraw()
@@ -158,6 +178,7 @@ function changeScreenWidth(width) {
 		introText.remove()
 		introButtons.before(introText)
 		topboxContact.after(burgerBtnOpen)
+		sideBlock.prepend(accordBtn)
 		headerBurger.remove()
 		header.remove()
 	} else {
